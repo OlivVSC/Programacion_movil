@@ -1,7 +1,13 @@
-import { useState } from "react";
-import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
+} from "react-native";
 
 import { FichaSala } from "../components/ficha_sala";
+import { InventarioEquipamiento } from "../components/inventario_equipamiento";
 
 export default function HomeScreen() {
   const Ficha_Sala = {
@@ -9,6 +15,10 @@ export default function HomeScreen() {
     descrip_sala: "Aforo máximo autorizado: 25 Personas",
     foto_sala:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc_MY291OjoN1iUu4y-hIRUP61497Y0qupfWnQLax_mg&s=10",
+  };
+  const Inventario_Equipamiento = {
+    inventario:
+      'Pantalla 4K de 85", Sistema de Micrófonos Omnidireccionales, Cámara PTZ para videollamadas, Red Wi-Fi dedicada y Tomas Eléctricas.',
   };
 
   return (
@@ -26,7 +36,9 @@ export default function HomeScreen() {
           descrip_sala={Ficha_Sala.descrip_sala}
           foto_sala={Ficha_Sala.foto_sala}
         />
-
+        <InventarioEquipamiento
+          inventario={Inventario_Equipamiento.inventario}
+        />
       </ScrollView>
     </SafeAreaView>
   );

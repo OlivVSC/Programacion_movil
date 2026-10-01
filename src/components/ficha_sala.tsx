@@ -1,3 +1,4 @@
+import react from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 //• 1. Ficha Visual del Espacio: Desplegar una tarjeta superior atractiva con la fotografía de la sala de conferencias,
 // mostrando de forma clara el nombre oficial de la sala y su aforo máximo autorizado (25 Personas).
